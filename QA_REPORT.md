@@ -1,4 +1,5 @@
-# QA Audit: contextlens
+# QA Audit: contextlens-mcp
+tests_passing: true
 
 176/176 tests passing (100%)
 
