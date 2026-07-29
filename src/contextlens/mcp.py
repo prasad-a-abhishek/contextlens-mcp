@@ -21,7 +21,7 @@ from __future__ import annotations
 import json
 import sys
 from dataclasses import dataclass
-from typing import Any, Callable
+from typing import Any, Callable, TextIO
 
 from contextlens import __version__
 from contextlens.budget import Message, budget_report
@@ -343,7 +343,10 @@ def _budget_to_json(arguments: dict[str, Any]) -> dict[str, Any]:
 # --- stdio driver ---------------------------------------------------------
 
 
-def serve_stdio(stdin=None, stdout=None) -> int:
+def serve_stdio(
+    stdin: TextIO | None = None,
+    stdout: TextIO | None = None,
+) -> int:
     """Run the MCP server until EOF on stdin. Returns the process exit code."""
     stdin = stdin if stdin is not None else sys.stdin
     stdout = stdout if stdout is not None else sys.stdout
