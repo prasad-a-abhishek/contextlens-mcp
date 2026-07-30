@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server.json",
+  "name": "contextlens-mcp",
+  "description": "Zero-dependency MCP server for prompt token budgeting, truncation, and window sliding.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prasad-a-abhishek/contextlens"
+  },
+  "packages": [
+    {
+      "registry": "pypi",
+      "name": "contextlens-mcp",
+      "executable": "uvx"
+    }
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "uvx",
+    "args": [
+      "contextlens-mcp"
+    ]
+  }
+}
