@@ -2,7 +2,7 @@
 
 > **"Deterministic, zero-dependency context-window math for MCP servers and LLM agents — estimate, truncate, and budget token counts without shipping a tokenizer."**
 
-[![PyPI version](https://img.shields.io/badge/PyPI-not__yet__published-blue.svg)](#install)
+[![PyPI version](https://img.shields.io/pypi/v/contextlens-mcp.svg)](https://pypi.org/project/contextlens-mcp/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](pyproject.toml)
 [![Tests](https://img.shields.io/badge/tests-176%20passing-brightgreen.svg)](#tests)
@@ -83,7 +83,7 @@ The repo is currently GitHub-only — install from source until the
 PyPI release:
 
 ```bash
-pip install git+https://github.com/prasad-a-abhishek/contextlens.git
+pip install contextlens-mcp
 ```
 
 Or, for local development:
